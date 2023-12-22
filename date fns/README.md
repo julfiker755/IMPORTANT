@@ -16,4 +16,10 @@ format(new Date(), 'PP')
 // Nov 21, 2023
 ```
 
+```js
+import { formatDistance } from 'date-fns'
+//What is the distance between 2 July 2014 and 1 January 2015?
+const result = formatDistance(new Date(2014, 6, 2), new Date(2015, 0, 1))
+//=> '6 months'
+```
 
