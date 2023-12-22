@@ -21,5 +21,10 @@ import { formatDistance } from 'date-fns'
 //What is the distance between 2 July 2014 and 1 January 2015?
 const result = formatDistance(new Date(2014, 6, 2), new Date(2015, 0, 1))
 //=> '6 months'
+
+//example project
+const totaldays = parseInt(formatDistance(new Date(room?.to), new Date(room?.from)).split(' ')[0])
+const totalprice=totaldays * room?.price
+console.log(totalprice)
 ```
 
