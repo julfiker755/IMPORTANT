@@ -1,4 +1,9 @@
 ```js
+//css use
+// post.module.css
+```
+
+```js
 // domain set anathor domain use
 /** @type {import('next').NextConfig} */
 const nextConfig = {
