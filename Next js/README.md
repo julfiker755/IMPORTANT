@@ -67,5 +67,11 @@ const nextConfig = {
    }
 };
 
+// Powered By --
+const nextConfig = {
+    poweredByHeader: false,
+};
+
+
 ```
 
