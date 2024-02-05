@@ -38,23 +38,26 @@ export async function generateStaticParams() {
 ```js
 //****************NextConfig***************
 
-// base path
+// base path --
 const nextConfig = {
     basePath:'/submenu'
 };
 
-// env file
+// env file --
 const nextConfig = {
     env:{
         API_KEY:'fjfjdlfjdl'
     }
 };
 
-// env file
+// headers --
 const nextConfig = {
-    env:{
-        API_KEY:'fjfjdlfjdl'
-    }
+   async headers(){
+     return [
+        // {source:'/',headers:[{key:'my-value',value:'123434'}]}
+        {source:'/:path*',headers:[{key:'my-value',value:'123434'}]}
+     ]
+   }
 };
 
 ```
