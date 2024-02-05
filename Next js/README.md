@@ -4,19 +4,18 @@
 ```
 ```js
    //security
-            // Webp
-            // layout="responsive"
-            // layout="fixed"
-            // priority
-            <Image 
-            alt="cover photo"
-            width={200}
-            height={200}
-            layout='responsive'
-            priority
-            src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg">
-
-            </Image>
+   // Webp
+   // layout="responsive"
+   // layout="fixed"
+   // priority
+   <Image 
+   alt="cover photo"
+   width={200}
+   height={200}
+   layout='responsive'
+   priority
+   src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg">
+   </Image>
 ```
 
 ```js
