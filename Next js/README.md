@@ -4,17 +4,6 @@
 ```
 
 ```js
-// domain set anathor domain use
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-    images:{
-        domains:["images.pexels.com"]
-    }
-}
-
-module.exports = nextConfig
-```
-```js
 //{cache:'no-store'}
 //{ cache: 'force-cache' }
 //{next:{revalidate:5}}
@@ -37,6 +26,14 @@ export async function generateStaticParams() {
 ```
 ```js
 //****************NextConfig***************
+
+// images --
+const nextConfig = {
+    images:{
+        domains:["images.pexels.com"]
+    }
+}
+
 
 // base path --
 const nextConfig = {
