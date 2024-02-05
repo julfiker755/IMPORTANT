@@ -36,9 +36,25 @@ export async function generateStaticParams() {
 }
 ```
 ```js
-****************NextConfig***************
+//****************NextConfig***************
+
+// base path
 const nextConfig = {
     basePath:'/submenu'
+};
+
+// env file
+const nextConfig = {
+    env:{
+        API_KEY:'fjfjdlfjdl'
+    }
+};
+
+// env file
+const nextConfig = {
+    env:{
+        API_KEY:'fjfjdlfjdl'
+    }
 };
 
 ```
