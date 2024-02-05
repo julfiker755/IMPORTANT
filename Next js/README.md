@@ -54,7 +54,7 @@ const nextConfig = {
 const nextConfig = {
    async headers(){
      return [
-        // {source:'/',headers:[{key:'my-value',value:'123434'}]}
+        // {source:'/product',headers:[{key:'my-value',value:'123434'}]}
         {source:'/:path*',headers:[{key:'my-value',value:'123434'}]}
      ]
    }
