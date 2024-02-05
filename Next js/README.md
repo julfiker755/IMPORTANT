@@ -57,5 +57,15 @@ const nextConfig = {
    }
 };
 
+// iframe use website --
+const nextConfig = {
+   async headers(){
+     return [
+        // {source:'/:path*',headers:[{key:'X-Frame-Options',value:'SAMEORIGIN'}]} // how to iframe use my website but other not use
+        {source:'/:path*',headers:[{key:'X-Frame-Options',value:'DENY'}]} // how to not use iframe ,my website,other
+     ]
+   }
+};
+
 ```
 
