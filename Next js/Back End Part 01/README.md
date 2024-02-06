@@ -190,5 +190,11 @@ export function middleware(req, res) {
       });
     }
 }
+// server get example2
+export const GET=async(req,res)=>{
+    const headerslist=headers()
+    const api_key=headerslist.get('phone')
+    return NextResponse.json({phone:api_key})
+}
 
 ````
