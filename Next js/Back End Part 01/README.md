@@ -41,8 +41,8 @@ export const GET=async(req,res)=>{
  // Working With Cookies [Request]
 
 export const GET=async(req,res)=>{
+     // const token=req.cookies.get('token')['name']
     // const token=req.cookies.get('token')['value']
-    // const token=req.cookies.get('token')['name']
     const token=req.cookies.get('token')
     return NextResponse.json({status:'success',message:token})
 }
