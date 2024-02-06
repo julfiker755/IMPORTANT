@@ -10,7 +10,7 @@ export const GET=async(req,res)=>{
 
     //  transporter
     let transporter = nodemailer.createTransport({
-        host: "mail:teamrabbil.com",
+        host: "mail.teamrabbil.com",
         port: 25,
         secure: false,
         auth: {
