@@ -1,5 +1,5 @@
 ```js
- // Working With URL Params
+ // Working With URL Params [ Request ]
 
 //example---  http://localhost:3000/api/menu?id=1000
 export const GET=async(req,res)=>{
@@ -17,3 +17,16 @@ export const GET=async(req,res)=>{
 }
 
 ```
+
+```js
+ // Working With Form Data [Request]
+
+export const POST=async(req,res)=>{
+    const fromdata=await req.formData()
+    const gender=fromdata.get("gender")
+    const phone=fromdata.get("phone")
+    return NextResponse.json({status:'success',gender:gender,phonenum:phone})
+}
+
+```
+
