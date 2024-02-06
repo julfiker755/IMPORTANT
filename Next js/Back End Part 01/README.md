@@ -149,4 +149,16 @@ export function middleware() {
     matcher:['/api/:path*','/dashboard/:path*']
   }
 ```
+```js
+ // Apply Specific Path On [Middleware]
 
+export function middleware(req,res) {
+     if(req.nextUrl.pathname.startsWith("/api/menu")){
+     console.log("/api/menu pathname")
+     return NextResponse.next()
+     }else if(req.nextUrl.pathname.startsWith("/dashboard/help")){
+       console.log('Dashboard layout')
+       return NextResponse.next()
+     }
+  }
+```
