@@ -49,10 +49,11 @@ export const GET=async(req,res)=>{
 
 ```
 ```js
- // Working With Status Code [Response] 
+ // Working With Status Code [Response]  -- 
 
 export const GET=async(req,res)=>{
     return NextResponse.json(
+        // {body}{status}
         {roll:'404420',name:'julfiker'},
         {
             status:203
