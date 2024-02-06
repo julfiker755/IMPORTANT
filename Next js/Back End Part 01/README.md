@@ -50,7 +50,6 @@ export const GET=async(req,res)=>{
 ```
 ```js
  // Working With Status Code [Response]  -- 
-
 export const GET=async(req,res)=>{
     return NextResponse.json(
         // {body}{status}
