@@ -56,5 +56,16 @@ export const GET=async(req,res)=>{
 }
 ```
 ```js
+//JWT TOKEN DECODE
 
+import {SignJWT,jwtVerify} from 'jose'
+import { NextResponse } from 'next/server'
+
+export const POST=async(req,res)=>{
+  const jsonbody=await req.json()
+  const Token=jsonbody['token']
+  const key=new TextEncoder().encode(process.env.secert_key) 
+  const decoded=await jwtVerify(Token,key)
+  return NextResponse.json(decoded)
+}
 ```
