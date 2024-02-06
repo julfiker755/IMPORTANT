@@ -162,3 +162,20 @@ export function middleware(req,res) {
      }
   }
 ```
+```js
+ // Settings Header With Request [Middleware]
+//example-1
+export function middleware(req,res) {
+     if(req.nextUrl.pathname.startsWith("/api/menu")){
+      const reqheader=new Headers(req.headers)
+      const token=reqheader.get('token')
+      if(token === "xyz-123"){
+        return NextResponse.next()
+      }else{
+        return NextResponse.json({message:'fail woring token'})
+      }
+
+     }
+  }
+// example-2
+````
