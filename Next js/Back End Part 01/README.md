@@ -202,11 +202,9 @@ export const GET=async(req,res)=>{
 // Settings Header With Response [Middleware] --
 export function middleware(req, res) {
     if (req.nextUrl.pathname.startsWith("/api/menu")) {
-      const reqHeaders = new Headers(req.headers);
-      reqHeaders.set('phone', '01741703755');
-
       const resnext=NextResponse.next();
       resnext.headers.set('jim','01741703755')
+      resnext.headers.set('jim1','01741703755')
       return resnext
     }
 }
