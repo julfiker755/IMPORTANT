@@ -61,4 +61,32 @@ export const GET=async(req,res)=>{
 }
 
 ```
+```js
+ // Working With Header [Response]  --
+
+export const GET=async(req,res)=>{
+    return NextResponse.json(
+        {roll:'4044201',name:'julfiker'},
+        {
+            status:200,
+            headers:{'token1':'xyz-123'}
+        }
+        )
+}
+
+export const GET=async(req,res)=>{
+    return NextResponse.json(
+        {roll:'4044201',name:'julfiker'},
+        {
+            status:200,
+            headers:{
+                'token1':'xyz-123',
+                'token2':'xyz-1234',
+                'token3':'xyz-1fd234'
+            }
+        }
+        )
+}
+
+```
 
