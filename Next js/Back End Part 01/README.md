@@ -125,4 +125,28 @@ export const GET=async(req,res)=>{
         )
 }
 ```
+```js
+// Introduce With Next.js [Middleware] -- middleware.js file use
+ // setp-1
+ export function middleware() {
+     console.log('I am middleware')
+  }
+
+// setp-2
+export function middleware() {
+     console.log('I am middleware')
+  }
+
+  export const config = {
+    matcher:['/api/:path*']
+  }
+// setp-3
+export function middleware() {
+     console.log('I am middleware')
+  }
+
+  export const config = {
+    matcher:['/api/:path*','/dashboard/:path*']
+  }
+```
 
