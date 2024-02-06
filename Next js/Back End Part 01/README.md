@@ -102,7 +102,7 @@ export const GET=async(req,res)=>{
             headers:{
                 'token1':'xyz-123',
                 'token2':'xyz-1234',
-                 'Set-Cookie':'token=XYZ-123;Path=/'
+                'Set-Cookie':'token=XYZ-123;Path=/'
             }
         }
         )
