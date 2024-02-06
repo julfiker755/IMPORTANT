@@ -178,4 +178,17 @@ export function middleware(req,res) {
      }
   }
 // example-2
+export function middleware(req, res) {
+    if (req.nextUrl.pathname.startsWith("/api/menu")) {
+      const reqHeaders = new Headers(req.headers);
+      reqHeaders.set('phone', '01741703755');
+
+      return NextResponse.next({
+        request: {
+          headers: reqHeaders,
+        },
+      });
+    }
+}
+
 ````
