@@ -75,6 +75,7 @@ export const GET=async(req,res)=>{
         )
 }
 
+// mutiple headers
 export const GET=async(req,res)=>{
     return NextResponse.json(
         {roll:'4044201',name:'julfiker'},
@@ -103,6 +104,22 @@ export const GET=async(req,res)=>{
                 'token1':'xyz-123',
                 'token2':'xyz-1234',
                 'Set-Cookie':'token=XYZ-123;Path=/'
+            }
+        }
+        )
+}
+
+// multiple cookice
+export const GET=async(req,res)=>{
+    return NextResponse.json(
+        {roll:'4044201',name:'julfiker'},
+        {
+            status:200,
+            headers:{
+                'token1':'xyz-123',
+                'token2':'xyz-1234',
+                'Set-Cookie':'token=XYZ-123;Path=/'
+                'Set-Cookie':'token=XYjffj-123;Path=/'
             }
         }
         )
