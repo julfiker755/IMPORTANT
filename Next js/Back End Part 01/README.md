@@ -48,4 +48,17 @@ export const GET=async(req,res)=>{
 }
 
 ```
+```js
+ // Working With Status Code [Response] 
+
+export const GET=async(req,res)=>{
+    return NextResponse.json(
+        {roll:'404420',name:'julfiker'},
+        {
+            status:203
+        }
+        )
+}
+
+```
 
