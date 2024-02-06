@@ -27,6 +27,7 @@ export const POST=async(req,res)=>{
     const phone=fromdata.get("phone")
     return NextResponse.json({status:'success',gender:gender,phonenum:phone})
 }
+```
 ```js
  // Working With Headers [Request]
 
@@ -35,7 +36,5 @@ export const GET=async(req,res)=>{
     const api_key=headerslist.get('API_KEY')
     return NextResponse.json({status:'success',message:api_key})
 }
-
-
 ```
 
