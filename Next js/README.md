@@ -111,8 +111,7 @@ const Dynamicpage = () => {
 
     return (
         <div>
-            <h1>Hello dynamic page-{params.id}</h1>
-            <h1>search parms {searchParams.email}</h1>
+            <h1>Hello dynamic page</h1>
         </div>
     );
 };
