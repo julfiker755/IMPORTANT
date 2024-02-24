@@ -90,4 +90,15 @@ const nextConfig = {
 
 
 ```
+```js
+const Dynamicpage = ({params,searchParams}) => {
+    console.log(params)
+    return (
+        <div>
+            <h1>Hello dynamic page-{params.id}</h1>
+            <h1>search parms {searchParams.email}</h1>
+        </div>
+    );
+};
+```
 
