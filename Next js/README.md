@@ -91,6 +91,7 @@ const nextConfig = {
 
 ```
 ```js
+// server side
 const Dynamicpage = ({params,searchParams}) => {
     console.log(params)
     return (
@@ -100,5 +101,21 @@ const Dynamicpage = ({params,searchParams}) => {
         </div>
     );
 };
+```
+```js
+// client side
+const Dynamicpage = () => {
+     // const params = useParams()
+  const searchParams = useSearchParams()
+  const search = searchParams.get('search')
+
+    return (
+        <div>
+            <h1>Hello dynamic page-{params.id}</h1>
+            <h1>search parms {searchParams.email}</h1>
+        </div>
+    );
+};
+
 ```
 
